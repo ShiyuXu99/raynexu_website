@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/raynexu_website/static/css/main.7bab8a8a.css",
+    "main.js": "/raynexu_website/static/js/main.5e55c4b4.js",
+    "static/js/453.d3551722.chunk.js": "/raynexu_website/static/js/453.d3551722.chunk.js",
+    "static/media/profile.png": "/raynexu_website/static/media/profile.c09064a0d18f0a3a0e26.png",
+    "static/media/Inter-ExtraBoldItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-ExtraBoldItalic.484f10179d33fa2992d9.woff2",
+    "static/media/Inter-BoldItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-BoldItalic.2cf00dc06f67faff98c2.woff2",
+    "static/media/Inter-SemiBoldItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-SemiBoldItalic.688008097bc0cd638745.woff2",
+    "static/media/Inter-MediumItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-MediumItalic.8bf30aa670a798f1dc70.woff2",
+    "static/media/Inter-LightItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-LightItalic.5336b8e1c76e1ab00547.woff2",
+    "static/media/Inter-ExtraLightItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-ExtraLightItalic.e7ecb03b270636f4642a.woff2",
+    "static/media/Inter-BlackItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-BlackItalic.bb94c5836b3fd7d86c46.woff2",
+    "static/media/Inter-Italic.woff2?v=4.0": "/raynexu_website/static/media/Inter-Italic.6d7a749f5b9f8ce1ae13.woff2",
+    "static/media/Inter-ThinItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-ThinItalic.7c76674c7eeffe6a82f3.woff2",
+    "static/media/Inter-ExtraBold.woff2?v=4.0": "/raynexu_website/static/media/Inter-ExtraBold.4378ab437cddfc2bbb71.woff2",
+    "static/media/Inter-Bold.woff2?v=4.0": "/raynexu_website/static/media/Inter-Bold.54851dc3f5ada849af04.woff2",
+    "static/media/Inter-SemiBold.woff2?v=4.0": "/raynexu_website/static/media/Inter-SemiBold.594041393209f0003754.woff2",
+    "static/media/Inter-Medium.woff2?v=4.0": "/raynexu_website/static/media/Inter-Medium.da6143a97b8ed2ae857b.woff2",
+    "static/media/Inter-ExtraLight.woff2?v=4.0": "/raynexu_website/static/media/Inter-ExtraLight.f270980df31d894beaf0.woff2",
+    "static/media/Inter-Light.woff2?v=4.0": "/raynexu_website/static/media/Inter-Light.8b60946b13251c212cac.woff2",
+    "static/media/Inter-Black.woff2?v=4.0": "/raynexu_website/static/media/Inter-Black.037d78a2cd9135e7d2c1.woff2",
+    "static/media/Inter-Regular.woff2?v=4.0": "/raynexu_website/static/media/Inter-Regular.85c128721035823e5405.woff2",
+    "static/media/Inter-Thin.woff2?v=4.0": "/raynexu_website/static/media/Inter-Thin.330d40f9d3469c8e913e.woff2",
+    "index.html": "/raynexu_website/index.html",
+    "main.7bab8a8a.css.map": "/raynexu_website/static/css/main.7bab8a8a.css.map",
+    "main.5e55c4b4.js.map": "/raynexu_website/static/js/main.5e55c4b4.js.map",
+    "453.d3551722.chunk.js.map": "/raynexu_website/static/js/453.d3551722.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7bab8a8a.css",
+    "static/js/main.5e55c4b4.js"
+  ]
+}
