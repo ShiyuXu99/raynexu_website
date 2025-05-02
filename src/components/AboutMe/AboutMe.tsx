@@ -18,7 +18,7 @@ const AboutMe = () => {
             </Typography>
             <Banner variant="info" icon={<CheckCircleIcon />} iconSize="small">
                 <Box>
-                    {' '}Your document has been <Link href="/download">uploaded</Link>
+                    {/*{' '}Your document has been <Link href="/download">uploaded</Link>*/}
                 </Box>
             </Banner>
             {/*<Banner*/}
