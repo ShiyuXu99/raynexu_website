@@ -19,7 +19,7 @@ const themeOptions: ThemeOptions = {
         },
         text: {
             primary: '#4B5056',
-            secondary: '#dce0e5',
+            secondary: '#5a5a5d',
         },
     },
     typography: {
@@ -40,11 +40,11 @@ const themeOptions: ThemeOptions = {
             color: '#42474D',
         },
         h2: {
-            fontSize: '1.5rem',
-            lineHeight: 1.2,
-            fontWeight: 500,
+            fontSize: '20px',
+            lineHeight: '22px',
+            fontWeight: 700,
             color: '#42474D',
-            margin: '16px 0',
+            margin: '8px 0',
         },
         subtitle1: {
             fontSize: '18px',

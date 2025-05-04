@@ -1,32 +1,37 @@
 import { Box } from '@mui/material';
-import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from './pages/HomePage';
+import HomePage from './pages/HomePage/HomePage';
+import Header from "./components/Header/Header";
+import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 
 function App() {
     return (
-        <div className="App">
-            <Box sx={{
-                width: '100%',
-                display: 'flex',
-                justifyContent: 'center',
-                minHeight: '100vh',
-            }}>
+        <Router basename={process.env.REACT_APP_BASE_PATH}>
+            <div className="App">
                 <Box sx={{
-                    width: { xs: '90%', md: '75%' },
-                    maxWidth: '1200px',
-                    py: 4, // Optional: Add vertical padding
+                    width: '100%',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    minHeight: '100vh',
+                    flexDirection: 'column',
                 }}>
-                    <Router>
+                    <Box sx={{
+                        width: { xs: '90%', md: '70%' },
+                        maxWidth: '1150px',
+                        pb: 4,
+                        flexGrow: 1,
+                        margin: '0 auto',
+                    }}>
+                        <Header />
                         <Routes>
                             <Route path="/" element={<HomePage />} />
-                            {/* Add other routes here */}
-                            {/* Example: <Route path="/projects" element={<ProjectsPage />} /> */}
+                            <Route path="/Projects" element={<ProjectsPage />} />
                         </Routes>
-                    </Router>
+                    </Box>
+                    {/*<Footer /> /!* Now inside <Router> *!/*/}
                 </Box>
-            </Box>
-        </div>
+            </div>
+        </Router>
     );
 }
 

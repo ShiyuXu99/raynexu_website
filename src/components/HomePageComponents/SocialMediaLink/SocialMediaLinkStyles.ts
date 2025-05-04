@@ -4,7 +4,7 @@ export const socialLinksContainerStyles: SxProps = {
     display: 'flex',
     gap: '8px',
     justifyContent: 'center',
-    mt: 4,
+    mt: 2,
 };
 
 export const iconButtonStyles = (color: string): SxProps => ({

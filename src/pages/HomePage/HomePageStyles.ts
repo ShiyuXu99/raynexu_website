@@ -17,17 +17,27 @@ export const homePageStyles = {
     leftBox: {
         flex: { md: '0 0 25%' },
         minWidth: { md: 270 },
-        // bgcolor: '#e0e0e0',
-        p: 2,
         display: 'flex',
         flexDirection: 'column'
     } as SxProps,
     rightBox: {
         flex: { md: '1 1 auto' },
         minWidth: { md: 300 },
-        // bgcolor: '#cfd8dc',
-        p: 2,
         display: 'flex',
         flexDirection: 'column'
+    } as SxProps,
+    newsContainer: {
+        mt: 6,
+        px: 3,
+        display: 'flex',
+        flexDirection:'column',
+        gap: 3,
+    } as SxProps,
+    publicationContainer: {
+        mt: 2,
+        px: 3,
+        display: 'flex',
+        flexDirection:'column',
+        gap: 3,
     } as SxProps
 };

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { AppBar, Toolbar, Typography, Box, SxProps, Theme } from '@mui/material';
 import { Link } from 'react-router-dom';
+import {shiyu_xu_CV} from "../../assets/PDF";
+import { useLocation as useRouterLocation } from 'react-router-dom';
 
 interface NavItem {
     label: string;
@@ -29,17 +31,27 @@ const navItemUnderlineStyles = (active: boolean): SxProps<Theme> => ({
 });
 
 const Header: React.FC = () => {
+    const { pathname } = useRouterLocation();  // Destructure pathname directly
     const [activeTab, setActiveTab] = React.useState<string>('Home');
+
+    useEffect(() => {
+        if (pathname === '/projects') {
+            setActiveTab('Projects');
+        } else if (pathname === '/') {
+            setActiveTab('Home');
+        }
+    }, [pathname]);  // Only depend on pathname
 
     const navItems: NavItem[] = [
         { label: 'Home', path: '/' },
         { label: 'Projects', path: '/projects' },
-        { label: 'CV', path: '/cv' },
+        // { label: 'CV', path: '/cv' },
     ];
 
     return (
-        <Box mb={4}>
-        <AppBar position="static" elevation={0} sx={{ backgroundColor: 'transparent' }}>
+        // remove the sx of Box will remove sticky header
+        <Box sx={{ position: 'sticky', top: 0, zIndex: 1999 }}>
+        <AppBar position="static" elevation={0} sx={{ backgroundColor: 'white' }}>
             <Toolbar sx={{ justifyContent: 'flex-start', width: '100%' }}>
                 <Box sx={{ display: 'flex', gap: 4 }}>
                     {navItems.map((item) => (
@@ -57,6 +69,20 @@ const Header: React.FC = () => {
                             {item.label}
                         </Typography>
                     ))}
+                    <Typography
+                        key="CV"
+                        component="a"
+                        href={shiyu_xu_CV}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        variant="body1"
+                        sx={{
+                            ...navItemBaseStyles,
+                            ...navItemUnderlineStyles(activeTab === 'CV'),
+                        }}
+                    >
+                        CV
+                    </Typography>
                 </Box>
             </Toolbar>
         </AppBar>

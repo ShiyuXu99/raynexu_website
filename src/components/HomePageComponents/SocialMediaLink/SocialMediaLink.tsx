@@ -20,27 +20,28 @@ interface SocialLink {
 const SocialLinks = () => {
     const socialLinks: SocialLink[] = [
         {
-            name: 'GitHub',
-            icon: <GitHubIcon />,
-            url: 'https://github.com/yourusername',
-            color: '#333',
+            name: 'Google Scholar',
+            icon: <GoogleScholarIcon />,
+            url: 'https://scholar.google.com/citations?user=ZzoSmfcAAAAJ&hl=en',
+            color: '#4285F4',
         },
         {
             name: 'LinkedIn',
             icon: <LinkedInIcon />,
-            url: 'https://linkedin.com/in/yourprofile',
+            url: 'https://www.linkedin.com/in/shiyuxu99/',
             color: '#0077B5',
         },
+
         {
-            name: 'Google Scholar',
-            icon: <GoogleScholarIcon />,
-            url: 'https://scholar.google.com/citations?user=yourid',
-            color: '#4285F4',
+            name: 'GitHub',
+            icon: <GitHubIcon />,
+            url: 'https://github.com/shiyuxu99',
+            color: '#333',
         },
         {
             name: 'Email',
             icon: <EmailIcon />,
-            url: 'mailto:your@email.com',
+            url: 'mailto:shiyu.rayne.xu@gmail.com',
             color: '#D44638',
         },
     ];

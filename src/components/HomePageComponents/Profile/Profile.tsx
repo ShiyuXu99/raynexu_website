@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material';
-import profileImage from '../../assets/images/profile.png';
-import IconText from '../IconText/IconText';
+import profileImage from '../../../assets/images/profile.png';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SocialLinks from "../SocialMediaLink/SocialMediaLink";
+import IconText from '../../CustomComponents/IconText';
 
 const Profile = () => {
     return (
