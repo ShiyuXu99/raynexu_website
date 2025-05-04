@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/raynexu_website/static/css/main.7bab8a8a.css",
-    "main.js": "/raynexu_website/static/js/main.5e55c4b4.js",
+    "main.css": "/raynexu_website/static/css/main.ee9ff6d1.css",
+    "main.js": "/raynexu_website/static/js/main.f4b1a6bc.js",
     "static/js/453.d3551722.chunk.js": "/raynexu_website/static/js/453.d3551722.chunk.js",
+    "static/media/smartHome.png": "/raynexu_website/static/media/smartHome.f7fbf29ddcf9edb20706.png",
     "static/media/profile.png": "/raynexu_website/static/media/profile.c09064a0d18f0a3a0e26.png",
     "static/media/Inter-ExtraBoldItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-ExtraBoldItalic.484f10179d33fa2992d9.woff2",
     "static/media/Inter-BoldItalic.woff2?v=4.0": "/raynexu_website/static/media/Inter-BoldItalic.2cf00dc06f67faff98c2.woff2",
@@ -22,13 +23,15 @@
     "static/media/Inter-Black.woff2?v=4.0": "/raynexu_website/static/media/Inter-Black.037d78a2cd9135e7d2c1.woff2",
     "static/media/Inter-Regular.woff2?v=4.0": "/raynexu_website/static/media/Inter-Regular.85c128721035823e5405.woff2",
     "static/media/Inter-Thin.woff2?v=4.0": "/raynexu_website/static/media/Inter-Thin.330d40f9d3469c8e913e.woff2",
+    "static/media/Shiyu_Xu_CV.pdf": "/raynexu_website/static/media/Shiyu_Xu_CV.78c0681b848b43e7a055.pdf",
+    "static/media/pairProgramming.png": "/raynexu_website/static/media/pairProgramming.e822ac0533ae15ec3265.png",
     "index.html": "/raynexu_website/index.html",
-    "main.7bab8a8a.css.map": "/raynexu_website/static/css/main.7bab8a8a.css.map",
-    "main.5e55c4b4.js.map": "/raynexu_website/static/js/main.5e55c4b4.js.map",
+    "main.ee9ff6d1.css.map": "/raynexu_website/static/css/main.ee9ff6d1.css.map",
+    "main.f4b1a6bc.js.map": "/raynexu_website/static/js/main.f4b1a6bc.js.map",
     "453.d3551722.chunk.js.map": "/raynexu_website/static/js/453.d3551722.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7bab8a8a.css",
-    "static/js/main.5e55c4b4.js"
+    "static/css/main.ee9ff6d1.css",
+    "static/js/main.f4b1a6bc.js"
   ]
 }
