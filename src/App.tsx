@@ -2,7 +2,6 @@ import { Box } from '@mui/material';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import HomePage from './pages/HomePage/HomePage';
 import Header from "./components/Header/Header";
-import ProjectsPage from "./pages/ProjectsPage/ProjectsPage";
 
 function App() {
     return (
@@ -25,7 +24,8 @@ function App() {
                         <Header />
                         <Routes>
                             <Route path="/" element={<HomePage />} />
-                            <Route path="/Projects" element={<ProjectsPage />} />
+                            {/*TBD: Disable for implementation*/}
+                            {/*<Route path="/Projects" element={<ProjectsPage />} />*/}
                         </Routes>
                     </Box>
                     {/*<Footer /> /!* Now inside <Router> *!/*/}

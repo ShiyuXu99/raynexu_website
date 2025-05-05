@@ -44,8 +44,8 @@ const Header: React.FC = () => {
 
     const navItems: NavItem[] = [
         { label: 'Home', path: '/' },
-        { label: 'Projects', path: '/projects' },
-        // { label: 'CV', path: '/cv' },
+        //TBD：implement for future
+        // { label: 'Projects', path: '/projects' },
     ];
 
     return (

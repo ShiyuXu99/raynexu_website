@@ -4,20 +4,6 @@ import ResourceLinks from './ResourceLinks';
 import SectionHeader from "../../SectionHeader/SectionHeader";
 import { publicationContents } from "../../../Contents/PublicationContents";
 
-interface Author {
-    name: string;
-    isBold?: boolean;
-}
-
-interface Publication {
-    id: string;
-    imageUrl?: string;
-    title: string;
-    authors: Author[]; // Changed from string[] to Author[]
-    conference: string;
-    introduction: string;
-}
-
 const PublicationComponent = () => {
     return (
         <Box>
