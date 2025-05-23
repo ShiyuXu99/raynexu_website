@@ -32,8 +32,8 @@ export const AboutMeContent = () => ({
                 text="Prof. Yaxing Yao"
                 href="https://yaxingyao.cs.vt.edu/"
             />
-            as a research assistant, focusing on HCI topics related to data privacy and health. Through these experiences, I discovered my passion for building health systems—particularly those that support mental health. Motivated by this interest,
-            I am currently collaborating with
+            as a research assistant, focusing on HCI topics related to data privacy and health. Through these experiences, I discovered my passion for building health systems, particularly those that support mental health. Motivated by this interest,
+            I am collaborating with
             <CustomLink
                 text="Prof. Xuhai Xu"
                 href="https://orsonxu.com/"
@@ -45,12 +45,21 @@ export const AboutMeContent = () => ({
     banner: {
         content: (
             <Typography variant="body1">
-                🔎 {" "} I’m actively seeking Ph.D. opportunities in Human-Computer Interaction (HCI) for
+                🔎 {"  "} I’m actively seeking Ph.D. opportunities in Human-Computer Interaction (HCI) for
                 <Typography component="span" fontWeight="bold" display="inline">
                     {" "}Spring/Fall 2026.
                 </Typography>
             </Typography>
         ),
         variant: 'info' as const,
+    },
+
+    banner2: {
+        content: (
+            <Typography variant="body1">
+                📄 {"  "} I am currently collaborating with Dr. Xuhai Xu on HCI and mental health research for the summer of 2025.
+            </Typography>
+        ),
+        variant: 'neutral' as const,
     }
 });

@@ -34,7 +34,7 @@ export const homePageStyles = {
         gap: 3,
     } as SxProps,
     publicationContainer: {
-        mt: 2,
+        mt: 3,
         px: 3,
         display: 'flex',
         flexDirection:'column',

@@ -17,9 +17,9 @@ const HomePage = () => {
                 </Box>
             </Box>
             {/* New container for full-width section header */}
-            <Box sx={homePageStyles.newsContainer}>
-                {/*<SectionHeader title="News"/>*/}
-            </Box>
+            {/*<Box sx={homePageStyles.newsContainer}>*/}
+            {/*    <SectionHeader title="News"/>*/}
+            {/*</Box>*/}
             <Box sx={homePageStyles.publicationContainer}>
                 <PublicationComponent />
             </Box>

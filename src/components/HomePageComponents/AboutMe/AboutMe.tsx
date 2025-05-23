@@ -20,6 +20,13 @@ const AboutMe = () => {
                     {content.banner.content}
                 </Banner>
             </Box>
+            <Box width={'100%'}>
+                <Banner
+                    variant={content.banner2.variant}
+                >
+                    {content.banner2.content}
+                </Banner>
+            </Box>
         </Box>
     );
 };
