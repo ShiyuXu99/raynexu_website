@@ -4,51 +4,87 @@ import CustomLink from "../components/CustomComponents/CustomLink";
 export const AboutMeContent = () => ({
     paragraphs: [
         <Typography variant="body1">
-            My research interests lie in
-            <Typography component="span" fontWeight="bold" display="inline">
-                {" "}human-computer interaction (HCI) and artificial intelligence (AI), {" "}
-            </Typography>
-            with a particular focus on designing and developing innovative technologies to advance
-            <Typography component="span" fontWeight="bold" display="inline">
-                {" "}human health.
-            </Typography>
+            <strong>Research Interests: </strong> Human-computer Interaction | Human-centered AI | Health (mental health focused) | Education
         </Typography>,
+
         <Typography variant="body1">
-            I earned my Master’s degree from the University of Michigan – Ann Arbor’s School of Information,
-            specializing in the Human-Computer Interaction track.
+            Hi! my name is Shiyu (Rayne) Xu, my research focuses on <strong>designing and developing intelligent, human-centered systems</strong> that advance human well-being,
+            particularly within the domains of health and education.
+        </Typography>,
+
+        <Typography variant="body1">
+            Before my three years working as a full-stack engineer in the industry, I earned my Master’s degree from the University of Michigan – Ann Arbor’s School of Information, specializing in the Human-Computer Interaction track.
             I also hold a Bachelor’s degree in Computer Science from the University of Wisconsin – Madison, with minors in Mathematics and Graphic Design.
         </Typography>,
 
         <Typography variant="body1">
-            I previously worked with
-            <CustomLink
-                text="Prof. Steve Oney"
-                href="https://from.so/Steve_Oney/"
-            />
-            as my advisor,
-            on projects in computer science education,
-            exploring how technology can support learning. I also worked with
-            <CustomLink
-                text="Prof. Yaxing Yao"
-                href="https://yaxingyao.cs.vt.edu/"
-            />
-            as a research assistant, focusing on HCI topics related to data privacy and health. Through these experiences, I discovered my passion for building health systems, particularly those that support mental health. Motivated by this interest,
-            I am collaborating with
-            <CustomLink
-                text="Prof. Xuhai Xu"
-                href="https://orsonxu.com/"
-            />
-             on research at the intersection of HCI, AI, and mental health.
+            I have been incredibly fortunate to learn from exceptional mentors who have guided and inspired my research journey:
         </Typography>,
+
+        <ul style={{ marginTop: 0, marginBottom: '1rem' }}>
+            <li>
+                <Typography variant="body1">
+                    <CustomLink
+                        text="Prof. Xuhai (Orson) Xu"
+                        href="https://orsonxu.com"
+                    /> — at the <CustomLink
+                        text="SEA Lab"
+                        href="https://sea-lab.space/"
+                    /> at Columbia University, where I worked on research at the intersection of
+                    Human–Computer Interaction (HCI), large language models (LLMs), and
+                    mental health, utilizing multimodal data such as wearable sensing data.
+                </Typography>
+            </li>
+
+            <li>
+                <Typography variant="body1">
+                    <CustomLink
+                        text="Prof. Steve Oney"
+                        href="https://from.so/Steve_Oney/"
+                    /> — at the University of Michigan, Ann Arbor, where I explored
+                    HCI and computer science education, focusing on how technology can support learning.
+                </Typography>
+            </li>
+
+            <li>
+                <Typography variant="body1">
+                    <CustomLink
+                        text="Prof. Yaxing Yao"
+                        href="https://yaxingyao.cs.vt.edu/"
+                    /> — as a summer research intern in his lab, studying
+                    HCI topics related to data privacy and health.
+                </Typography>
+            </li>
+        </ul>,
+
+        // <Typography variant="body1">
+        //     I previously worked with{" "}
+        //     <CustomLink
+        //         text="Prof. Steve Oney"
+        //         href="https://from.so/Steve_Oney/"
+        //     />{" "}
+        //     as my advisor, on projects in computer science education exploring how technology can support learning.
+        //     I also worked with{" "}
+        //     <CustomLink
+        //         text="Prof. Yaxing Yao"
+        //         href="https://yaxingyao.cs.vt.edu/"
+        //     />{" "}
+        //     as a research assistant, focusing on HCI topics related to data privacy and health. Through these experiences,
+        //     I discovered my passion for building health systems, particularly those that support mental health.
+        //     Motivated by this interest, I am collaborating with{" "}
+        //     <CustomLink
+        //         text="Prof. Xuhai Xu"
+        //         href="https://orsonxu.com/"
+        //     />{" "}
+        //     on research at the intersection of HCI, AI, and mental health.
+        // </Typography>,
     ],
 
     banner: {
         content: (
             <Typography variant="body1">
-                🔎 {"  "} I’m actively seeking Ph.D. opportunities in Human-Computer Interaction (HCI) for
-                <Typography component="span" fontWeight="bold" display="inline">
-                    {" "}Spring/Fall 2026.
-                </Typography>
+                🔎{"  "} I’m actively seeking Ph.D. opportunities in Human-Computer Interaction (HCI) for{" "}
+                <strong>Fall 2026</strong>!
             </Typography>
         ),
         variant: 'info' as const,
@@ -57,9 +93,9 @@ export const AboutMeContent = () => ({
     banner2: {
         content: (
             <Typography variant="body1">
-                📄 {"  "} I am currently collaborating with Dr. Xuhai Xu on HCI and mental health research for the summer of 2025.
+                📄{"  "} I am currently collaborating with Dr. Xuhai Xu on HCI and mental health research for the summer of 2025.
             </Typography>
         ),
         variant: 'neutral' as const,
-    }
+    },
 });

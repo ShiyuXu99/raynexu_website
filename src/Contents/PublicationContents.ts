@@ -1,4 +1,4 @@
-import {pairProgrammingImg, smartHomeImg} from "../assets/images/publicationImages";
+import {mentalHealthDashboardImg, pairProgrammingImg, smartHomeImg} from "../assets/images/publicationImages";
 import {pair_programming} from "../assets/PDF";
 import {smart_home_privacy} from "../assets/PDF";
 
@@ -11,6 +11,7 @@ interface URLs {
 interface Author {
     name: string;
     isBold?: boolean;
+    isCoAuth?: boolean;
 }
 
 interface Publication {
@@ -20,10 +21,22 @@ interface Publication {
     authors: Author[];
     conference: string;
     introduction: string;
-    URLs: URLs; // presentationUrl is optional here
+    URLs?: URLs; // presentationUrl is optional here
 }
 
 export const publicationContents : Publication[] = [
+    {
+        id: '3',
+        imageUrl: mentalHealthDashboardImg,
+        title: 'Empowering Mental Health Clinicians with Multimodal Data Insights through a Narrative Dashboard',
+        authors: [
+            { name: 'Shiyu Xu', isBold: true, isCoAuth: true },
+            { name: 'Ruishi Zou', isCoAuth: true},
+            { name: '....'  },
+        ],
+        conference: 'In review',
+        introduction: "",
+    },
     {
         id: '1',
         imageUrl: pairProgrammingImg,

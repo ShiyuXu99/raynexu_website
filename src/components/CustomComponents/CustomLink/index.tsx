@@ -10,24 +10,21 @@ interface CustomLinkProps {
 
 const CustomLink: React.FC<CustomLinkProps> = ({
                                                    text,
-                                                       href,
-                                                       fontWeight = 'bold',
-                                                       target = '_blank',
-                                                   }) => {
+                                                   href,
+                                                   fontWeight = 'bold',
+                                                   target = '_blank',
+                                               }) => {
     return (
-        <>
-            {' '}
-            <Link
-                underline="hover"
-                href={href}
-                target={target}
-                rel="noopener noreferrer"
-                fontWeight={fontWeight}
-            >
-                {text}
-            </Link>
-            {' '}
-        </>
+        <Link
+            underline="hover"
+            href={href}
+            target={target}
+            rel="noopener noreferrer"
+            fontWeight={fontWeight}
+            sx={{ display: 'inline', whiteSpace: 'pre-wrap' }}
+        >
+            {text}
+        </Link>
     );
 };
 

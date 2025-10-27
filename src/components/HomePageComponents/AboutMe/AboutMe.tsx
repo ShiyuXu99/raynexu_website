@@ -9,7 +9,7 @@ const AboutMe = () => {
         <Box sx={{
             display: 'flex',
             flexDirection: 'column',
-            alignItems: 'center',
+            alignItems: 'flex-start',
             gap: 1
         }}>
             {content.paragraphs}
@@ -20,13 +20,13 @@ const AboutMe = () => {
                     {content.banner.content}
                 </Banner>
             </Box>
-            <Box width={'100%'}>
-                <Banner
-                    variant={content.banner2.variant}
-                >
-                    {content.banner2.content}
-                </Banner>
-            </Box>
+            {/*<Box width={'100%'}>*/}
+            {/*    <Banner*/}
+            {/*        variant={content.banner2.variant}*/}
+            {/*    >*/}
+            {/*        {content.banner2.content}*/}
+            {/*    </Banner>*/}
+            {/*</Box>*/}
         </Box>
     );
 };

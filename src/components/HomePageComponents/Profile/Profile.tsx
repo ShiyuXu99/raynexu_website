@@ -1,8 +1,8 @@
 import { Box, Typography } from '@mui/material';
-import profileImage from '../../../assets/images/profile.png';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import SocialLinks from "../SocialMediaLink/SocialMediaLink";
 import IconText from '../../CustomComponents/IconText';
+import { profilePic } from "../../../assets/images";
 
 const Profile = () => {
     return (
@@ -14,7 +14,7 @@ const Profile = () => {
         }}>
             <Box
                 component="img"
-                src={profileImage}
+                src={profilePic}
                 alt="Profile picture"
                 mb={3}
                 sx={{
