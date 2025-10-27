@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.6235484f.css",
-    "main.js": "/static/js/main.f0e3e651.js",
+    "main.js": "/static/js/main.52f590ea.js",
     "static/js/453.d3551722.chunk.js": "/static/js/453.d3551722.chunk.js",
     "static/media/CHI2022_smart_home_user_notification.pdf": "/static/media/CHI2022_smart_home_user_notification.eb60063ea80bb002ef52.pdf",
     "static/media/How_Pairing_by_Code_Similarity_Influences_Discussions_in_Peer_Learning.pdf": "/static/media/How_Pairing_by_Code_Similarity_Influences_Discussions_in_Peer_Learning.7ef44c2db4bd075bb31b.pdf",
     "static/media/smartHome.png": "/static/media/smartHome.f7fbf29ddcf9edb20706.png",
-    "static/media/profile.png": "/static/media/profile.c09064a0d18f0a3a0e26.png",
+    "static/media/mentalHealthDashboard.png": "/static/media/mentalHealthDashboard.f77a953e0a261338f155.png",
+    "static/media/profile.jpg": "/static/media/profile.9a87c9f0f2c3f0f1cf42.jpg",
     "static/media/Inter-ExtraBoldItalic.woff2?v=4.0": "/static/media/Inter-ExtraBoldItalic.484f10179d33fa2992d9.woff2",
     "static/media/Inter-BoldItalic.woff2?v=4.0": "/static/media/Inter-BoldItalic.2cf00dc06f67faff98c2.woff2",
     "static/media/Inter-SemiBoldItalic.woff2?v=4.0": "/static/media/Inter-SemiBoldItalic.688008097bc0cd638745.woff2",
@@ -25,15 +26,15 @@
     "static/media/Inter-Black.woff2?v=4.0": "/static/media/Inter-Black.037d78a2cd9135e7d2c1.woff2",
     "static/media/Inter-Regular.woff2?v=4.0": "/static/media/Inter-Regular.85c128721035823e5405.woff2",
     "static/media/Inter-Thin.woff2?v=4.0": "/static/media/Inter-Thin.330d40f9d3469c8e913e.woff2",
-    "static/media/Shiyu_Xu_CV.pdf": "/static/media/Shiyu_Xu_CV.b9f6837634aab6d88bc1.pdf",
+    "static/media/Shiyu_Xu_CV.pdf": "/static/media/Shiyu_Xu_CV.4fc75925f1a5db447dce.pdf",
     "static/media/pairProgramming.png": "/static/media/pairProgramming.e822ac0533ae15ec3265.png",
     "index.html": "/index.html",
     "main.6235484f.css.map": "/static/css/main.6235484f.css.map",
-    "main.f0e3e651.js.map": "/static/js/main.f0e3e651.js.map",
+    "main.52f590ea.js.map": "/static/js/main.52f590ea.js.map",
     "453.d3551722.chunk.js.map": "/static/js/453.d3551722.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6235484f.css",
-    "static/js/main.f0e3e651.js"
+    "static/js/main.52f590ea.js"
   ]
 }
