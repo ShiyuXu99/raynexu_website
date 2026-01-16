@@ -4,58 +4,58 @@ import { createTheme, ThemeOptions } from '@mui/material/styles';
 const themeOptions: ThemeOptions = {
     palette: {
         primary: {
-            main: '#7591C7',
-            dark: '#4E6B96',
-            light: '#4791db',
+            main: '#3d6c9f',   // muted academic blue
+            dark: '#2C4E73',
+            light: '#6B8FB3',
         },
         secondary: {
-            main: '#dc004e',
-            dark: '#9a0036',
-            light: '#e33371',
+            main: '#8A4F7D',   // muted plum (替代红色)
+            dark: '#6E3E64',
+            light: '#B07FA6',
         },
         background: {
-            default: '#f4f6f8',
-            paper: '#ffffff',
+            default: '#F6F7F9',
+            paper: '#FFFFFF',
         },
         text: {
-            primary: '#4B5056',
-            secondary: '#5a5a5d',
+            primary: '#2E3440',
+            secondary: '#5A6270',
         },
     },
     typography: {
         fontFamily: [
-            '"Inter"',
+            '"IBM Plex Sans"',
             '-apple-system',
             'BlinkMacSystemFont',
             '"Segoe UI"',
             'Roboto',
-            '"Helvetica Neue"',
             'Arial',
             'sans-serif',
         ].join(','),
+
         h1: {
-            fontSize: '24px',
-            lineHeight: '26px',
-            fontWeight: 800,
+            fontSize: '26px',
+            lineHeight: 1.25,
+            fontWeight: 700,
             color: '#42474D',
         },
         h2: {
-            fontSize: '20px',
-            lineHeight: '22px',
-            fontWeight: 700,
-            color: '#42474D',
-            margin: '8px 0',
+            fontSize: '22px',
+            lineHeight: 1.3,
+            fontWeight: 600,
+            color: '#2E3440',
+            margin: '12px 0 8px',
         },
         subtitle1: {
             fontSize: '18px',
-            fontWeight: 700,
-            color: '#42474D',
+            fontWeight: 600,
+            color: '#3A3F45',
             lineHeight: 1.5,
         },
         body1: {
-            fontSize: '14px',
-            color: '#42474D',
-            lineHeight: 1.7,
+            fontSize: '15px',
+            color: '#2E3440',
+            lineHeight: 1.6,
         },
     },
     spacing: 8,
