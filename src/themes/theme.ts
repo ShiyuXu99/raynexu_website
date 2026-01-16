@@ -53,9 +53,9 @@ const themeOptions: ThemeOptions = {
             lineHeight: 1.5,
         },
         body1: {
-            fontSize: '15px',
+            fontSize: '15.2px',
             color: '#2E3440',
-            lineHeight: 1.6,
+            lineHeight: 1.65,
         },
     },
     spacing: 8,
