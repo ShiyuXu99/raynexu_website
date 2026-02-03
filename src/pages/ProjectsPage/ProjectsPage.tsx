@@ -1,6 +1,6 @@
 import {Box} from "@mui/material";
 import { ProjectsPageStyles } from "./ProjectsPageStyles";
-import {ProjectsIntro} from "../../Contents/ProjectsContents/ProjectsIntro";
+import {ProjectsIntro} from "../../contents/ProjectsContents/ProjectsIntro";
 
 const ProjectsPage = () => {
     return (

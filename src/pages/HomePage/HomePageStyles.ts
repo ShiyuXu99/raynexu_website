@@ -27,7 +27,7 @@ export const homePageStyles = {
         flexDirection: 'column'
     } as SxProps,
     newsContainer: {
-        mt: 6,
+        mt: 3,
         px: 3,
         display: 'flex',
         flexDirection:'column',
@@ -39,5 +39,11 @@ export const homePageStyles = {
         display: 'flex',
         flexDirection:'column',
         gap: 3,
+    } as SxProps,
+    footerContainer: {
+        mt: 4,
+        px: 3,
+        display: 'flex',
+        flexDirection: 'column',
     } as SxProps
 };

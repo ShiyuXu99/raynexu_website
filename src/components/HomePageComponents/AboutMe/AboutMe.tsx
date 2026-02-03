@@ -1,6 +1,6 @@
 import { Box, Typography } from '@mui/material';
 import Banner from '../../CustomComponents/Banner/Banner';
-import {AboutMeContent} from "../../../Contents/AboutMeContent";
+import {AboutMeContent} from "../../../contents/AboutMeContent";
 
 const AboutMe = () => {
     const content = AboutMeContent();

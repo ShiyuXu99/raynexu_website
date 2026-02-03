@@ -11,7 +11,7 @@ interface CustomLinkProps {
 const CustomLink: React.FC<CustomLinkProps> = ({
                                                    text,
                                                    href,
-                                                   fontWeight = 'bold',
+                                                   fontWeight = 600,
                                                    target = '_blank',
                                                }) => {
     return (

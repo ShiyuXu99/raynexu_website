@@ -6,15 +6,16 @@ export const AboutMeContent = () => ({
         <Typography variant="body1">
             <strong>Research Interests: </strong> Human-computer Interaction | Human-centered AI | Health (mental health focused) | Education
         </Typography>,
-
         <Typography variant="body1">
-            Hi! my name is Shiyu (Rayne) Xu, my research focuses on <strong>designing and developing intelligent, human-centered systems</strong> that advance human well-being,
-            particularly within the domains of health and education.
+            Hi! my name is Shiyu (Rayne) Xu, my research focuses on <strong>designing and developing intelligent, human-centered systems</strong> that enhance human wellbeing and support better sense-making in both daily and clinical contexts.
         </Typography>,
 
         <Typography variant="body1">
-            Before my three years working as a full-stack engineer in the industry, I earned my Master’s degree from the University of Michigan – Ann Arbor’s School of Information, specializing in the Human-Computer Interaction track.
-            I also hold a Bachelor’s degree in Computer Science from the University of Wisconsin – Madison, with minors in Mathematics and Graphic Design.
+            I hold a Master’s degree in Human-Computer Interaction from the <CustomLink
+            fontWeight={600}
+            text="University of Michigan"
+            href="https://www.si.umich.edu"
+        /> and a Bachelor’s degree in Computer Science from the University of Wisconsin–Madison, with minors in Mathematics and Graphic Design, and have three years of experience as a full-stack engineer.
         </Typography>,
 
         <Typography variant="body1">

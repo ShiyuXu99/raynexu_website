@@ -1,18 +1,22 @@
-import { Box, Button } from '@mui/material';
+import {Box, Button, Chip, Typography} from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import LinkIcon from '@mui/icons-material/Link';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
+import LanguageIcon from '@mui/icons-material/Language';
+import React from "react";
 
 interface ResourceLinksProps {
     pdfUrl?: string;
     paperUrl?: string;
+    paperWebsiteUrl?: string;
     presentationUrl?: string;
 }
 
 const ResourceLinks = ({
                            pdfUrl,
                            paperUrl,
+                           paperWebsiteUrl,
                            presentationUrl,
                        }: ResourceLinksProps) => {
     const theme = useTheme();
@@ -32,6 +36,12 @@ const ResourceLinks = ({
 
         },
         {
+            name: 'Website',
+            icon: <LanguageIcon />,
+            url: paperWebsiteUrl,
+            color: theme.palette.text.secondary
+        },
+        {
             name: 'Presentation',
             icon: <SlideshowIcon />,
             url: presentationUrl,
@@ -39,10 +49,8 @@ const ResourceLinks = ({
         },
     ].filter(link => !!link.url); // Only show links with valid URLs
 
-    if (links.length === 0) return null;
-
     return (
-        <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
+        <Box sx={{ display: 'flex', gap: 1.5 }}>
             {links.map(link => (
                 <Button
                     key={link.name}
@@ -55,6 +63,7 @@ const ResourceLinks = ({
                         color: link.color,
                         textTransform: 'none',
                         backgroundColor: 'transparent',
+                        '& .MuiButton-startIcon': { marginRight: '7px' },
                         '&:hover': {
                             color: theme.palette.primary.main,
                             backgroundColor: 'transparent',

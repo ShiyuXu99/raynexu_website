@@ -4,7 +4,7 @@ import { createTheme, ThemeOptions } from '@mui/material/styles';
 const themeOptions: ThemeOptions = {
     palette: {
         primary: {
-            main: '#3d6c9f',   // muted academic blue
+            main: '#2171b5',   // muted academic blue
             dark: '#2C4E73',
             light: '#6B8FB3',
         },
@@ -37,13 +37,13 @@ const themeOptions: ThemeOptions = {
             fontSize: '26px',
             lineHeight: 1.25,
             fontWeight: 700,
-            color: '#42474D',
+            color: '#2b2d30',
         },
         h2: {
             fontSize: '22px',
             lineHeight: 1.3,
             fontWeight: 600,
-            color: '#2E3440',
+            color: '#2b2d30',
             margin: '12px 0 8px',
         },
         subtitle1: {
@@ -54,8 +54,12 @@ const themeOptions: ThemeOptions = {
         },
         body1: {
             fontSize: '15.2px',
-            color: '#2E3440',
+            color: '#2b2d30',
             lineHeight: 1.65,
+        },
+        body2: {
+            fontSize: '12px',
+            lineHeight: 1.6,
         },
     },
     spacing: 8,
