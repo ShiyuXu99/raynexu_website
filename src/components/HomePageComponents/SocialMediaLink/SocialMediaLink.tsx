@@ -22,7 +22,7 @@ const SocialLinks = () => {
         {
             name: 'Google Scholar',
             icon: <GoogleScholarIcon />,
-            url: 'https://scholar.google.com/citations?user=ZzoSmfcAAAAJ&hl=en',
+            url: 'https://scholar.google.com/citations?user=IJDB7twAAAAJ&hl=en',
             color: '#4285F4',
         },
         {
