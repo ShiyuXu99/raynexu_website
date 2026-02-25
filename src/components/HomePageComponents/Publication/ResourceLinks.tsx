@@ -1,10 +1,9 @@
-import {Box, Button, Chip, Typography} from '@mui/material';
+import {Box, Button} from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import LinkIcon from '@mui/icons-material/Link';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import LanguageIcon from '@mui/icons-material/Language';
-import React from "react";
 
 interface ResourceLinksProps {
     pdfUrl?: string;
@@ -26,26 +25,26 @@ const ResourceLinks = ({
             name: 'PDF',
             icon: <PictureAsPdfIcon />,
             url: pdfUrl,
-            color: theme.palette.text.secondary
+            color: theme.palette.text.primary
         },
         {
             name: 'Paper',
             icon: <LinkIcon />,
             url: paperUrl,
-            color: theme.palette.text.secondary
+            color: theme.palette.text.primary
 
         },
         {
             name: 'Website',
             icon: <LanguageIcon />,
             url: paperWebsiteUrl,
-            color: theme.palette.text.secondary
+            color: theme.palette.text.primary
         },
         {
             name: 'Presentation',
             icon: <SlideshowIcon />,
             url: presentationUrl,
-            color: theme.palette.text.secondary
+            color: theme.palette.text.primary
         },
     ].filter(link => !!link.url); // Only show links with valid URLs
 
@@ -65,7 +64,7 @@ const ResourceLinks = ({
                         backgroundColor: 'transparent',
                         '& .MuiButton-startIcon': { marginRight: '7px' },
                         '&:hover': {
-                            color: theme.palette.primary.main,
+                            color: theme.palette.text.primary,
                             backgroundColor: 'transparent',
                         },
                     }}

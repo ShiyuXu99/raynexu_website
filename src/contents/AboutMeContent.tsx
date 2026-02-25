@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 import CustomLink from "../components/CustomComponents/CustomLink";
 
 export const AboutMeContent = () => ({
-    paragraphs: [
+    introParagraphs: [
         <Typography variant="body1">
             <strong>Research Interests: </strong> Human-computer Interaction | Human-centered AI | Health (mental health focused) | Education
         </Typography>,
@@ -17,11 +17,27 @@ export const AboutMeContent = () => ({
             href="https://www.si.umich.edu"
         /> and a Bachelor’s degree in Computer Science from the University of Wisconsin–Madison, with minors in Mathematics and Graphic Design, and have three years of experience as a full-stack engineer.
         </Typography>,
-
+    ],
+    mentorsSummary: (
+        <Typography variant="body1">
+            I have been incredibly fortunate to learn from mentors including <CustomLink
+            text="Prof. Xuhai Xu"
+            href="https://orsonxu.com"
+        />, <CustomLink
+            text="Prof. Steve Oney"
+            href="https://from.so/Steve_Oney/"
+        /> and <CustomLink
+            text="Prof. Yaxing Yao"
+            href="https://yaxingyao.cs.vt.edu/"
+        /> who have guided and inspired my research journey.
+        </Typography>
+    ),
+    mentorsExpandedLead: (
         <Typography variant="body1">
             I have been incredibly fortunate to learn from exceptional mentors who have guided and inspired my research journey:
-        </Typography>,
-
+        </Typography>
+    ),
+    mentorsDetails: (
         <ul style={{ marginTop: 0, marginBottom: '1rem' }}>
             <li>
                 <Typography variant="body1">
@@ -36,7 +52,6 @@ export const AboutMeContent = () => ({
                     mental health, utilizing multimodal data such as wearable sensing data.
                 </Typography>
             </li>
-
             <li>
                 <Typography variant="body1">
                     <CustomLink
@@ -46,7 +61,6 @@ export const AboutMeContent = () => ({
                     HCI and computer science education, focusing on how technology can support learning.
                 </Typography>
             </li>
-
             <li>
                 <Typography variant="body1">
                     <CustomLink
@@ -56,30 +70,8 @@ export const AboutMeContent = () => ({
                     HCI topics related to data privacy and health.
                 </Typography>
             </li>
-        </ul>,
-
-        // <Typography variant="body1">
-        //     I previously worked with{" "}
-        //     <CustomLink
-        //         text="Prof. Steve Oney"
-        //         href="https://from.so/Steve_Oney/"
-        //     />{" "}
-        //     as my advisor, on projects in computer science education exploring how technology can support learning.
-        //     I also worked with{" "}
-        //     <CustomLink
-        //         text="Prof. Yaxing Yao"
-        //         href="https://yaxingyao.cs.vt.edu/"
-        //     />{" "}
-        //     as a research assistant, focusing on HCI topics related to data privacy and health. Through these experiences,
-        //     I discovered my passion for building health systems, particularly those that support mental health.
-        //     Motivated by this interest, I am collaborating with{" "}
-        //     <CustomLink
-        //         text="Prof. Xuhai Xu"
-        //         href="https://orsonxu.com/"
-        //     />{" "}
-        //     on research at the intersection of HCI, AI, and mental health.
-        // </Typography>,
-    ],
+        </ul>
+    ),
 
     banner: {
         content: (
