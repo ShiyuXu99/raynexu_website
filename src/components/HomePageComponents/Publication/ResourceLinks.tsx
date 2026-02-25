@@ -62,10 +62,13 @@ const ResourceLinks = ({
                         color: link.color,
                         textTransform: 'none',
                         backgroundColor: 'transparent',
+                        borderRadius: 1,
+                        px: 1,
+                        minWidth: 0,
                         '& .MuiButton-startIcon': { marginRight: '7px' },
                         '&:hover': {
-                            color: theme.palette.text.primary,
-                            backgroundColor: 'transparent',
+                            color: '#0047BB',
+                            backgroundColor: theme.palette.action.hover,
                         },
                     }}
                 >
