@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { AppBar, Toolbar, Typography, Box, SxProps, Theme } from '@mui/material';
 import { Link } from 'react-router-dom';
 import {shiyu_xu_CV} from "../../assets/PDF";
@@ -31,16 +31,7 @@ const navItemUnderlineStyles = (active: boolean): SxProps<Theme> => ({
 });
 
 const Header: React.FC = () => {
-    const { pathname } = useRouterLocation();  // Destructure pathname directly
-    const [activeTab, setActiveTab] = React.useState<string>('Home');
-
-    useEffect(() => {
-        if (pathname === '/projects') {
-            setActiveTab('Projects');
-        } else if (pathname === '/') {
-            setActiveTab('Home');
-        }
-    }, [pathname]);  // Only depend on pathname
+    const { pathname } = useRouterLocation();
 
     const navItems: NavItem[] = [
         { label: 'Home', path: '/' },
@@ -60,10 +51,9 @@ const Header: React.FC = () => {
                             component={Link}
                             to={item.path}
                             variant="body1"
-                            onClick={() => setActiveTab(item.label)}
                             sx={{
                                 ...navItemBaseStyles,
-                                ...navItemUnderlineStyles(activeTab === item.label),
+                                ...navItemUnderlineStyles(pathname === item.path),
                             }}
                         >
                             {item.label}
@@ -78,7 +68,7 @@ const Header: React.FC = () => {
                         variant="body1"
                         sx={{
                             ...navItemBaseStyles,
-                            ...navItemUnderlineStyles(activeTab === 'CV'),
+                            ...navItemUnderlineStyles(false),
                         }}
                     >
                         CV

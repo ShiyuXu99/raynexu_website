@@ -86,12 +86,12 @@ const PublicationComponent = () => {
                                     }}
                                     label={pub.conference}
                                 />
-                                {pub.URLs && <Box component="span" sx={{ color: 'text.disabled' }}>|</Box>}
+                                {pub.urls && <Box component="span" sx={{ color: 'text.disabled' }}>|</Box>}
                                 <ResourceLinks
-                                    pdfUrl= {pub.URLs?.pdfUrl}
-                                    paperUrl={pub.URLs?.paperUrl}
-                                    presentationUrl={pub.URLs?.presentationUrl}
-                                    paperWebsiteUrl={pub.URLs?.paperWebsiteUrl}
+                                    pdfUrl= {pub.urls?.pdfUrl}
+                                    paperUrl={pub.urls?.paperUrl}
+                                    presentationUrl={pub.urls?.presentationUrl}
+                                    paperWebsiteUrl={pub.urls?.paperWebsiteUrl}
                                 />
                             </Box>
 

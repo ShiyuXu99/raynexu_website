@@ -1,4 +1,4 @@
-import { Box, Link } from '@mui/material';
+import { Box } from '@mui/material';
 import Profile from '../../components/HomePageComponents/Profile/Profile';
 import { homePageStyles } from "./HomePageStyles";
 import AboutMe from "../../components/HomePageComponents/AboutMe/AboutMe";

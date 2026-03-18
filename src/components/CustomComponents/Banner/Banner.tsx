@@ -1,4 +1,4 @@
-import { Box, Typography, SxProps } from '@mui/material';
+import { Box, SxProps } from '@mui/material';
 import { ReactNode } from 'react';
 
 type BannerVariant = 'neutral' | 'success' | 'info' ;
@@ -42,9 +42,7 @@ const Banner = ({
                 ...sx,
             }}
         >
-            <Typography variant="body1" component="div">
-                {children}
-            </Typography>
+            {children}
         </Box>
     );
 };

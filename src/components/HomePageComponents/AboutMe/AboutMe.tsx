@@ -1,12 +1,37 @@
-import { Box, Button, Collapse } from '@mui/material';
+import { Box, Button, Collapse, Typography } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import Banner from '../../CustomComponents/Banner/Banner';
-import {AboutMeContent} from "../../../contents/AboutMeContent";
+import CustomLink from '../../CustomComponents/CustomLink';
+import { aboutMeContent } from "../../../contents/AboutMeContent";
+import { AboutInlineSegment, AboutParagraph } from '../../../types/about';
+
+const renderInlineSegments = (segments: AboutInlineSegment[]) =>
+    segments.map((segment, index) => {
+        if (segment.kind === 'link') {
+            return (
+                <CustomLink
+                    key={`${segment.text}-${index}`}
+                    text={segment.text}
+                    href={segment.href}
+                    fontWeight={segment.fontWeight}
+                />
+            );
+        }
+
+        if (segment.kind === 'strong') {
+            return <strong key={`${segment.text}-${index}`}>{segment.text}</strong>;
+        }
+
+        return <Fragment key={`${segment.text}-${index}`}>{segment.text}</Fragment>;
+    });
+
+const renderParagraph = (paragraph: AboutParagraph) => (
+    <Typography variant="body1">{renderInlineSegments(paragraph.segments)}</Typography>
+);
 
 const AboutMe = () => {
-    const content = AboutMeContent();
     const [isMentorsExpanded, setIsMentorsExpanded] = useState(false);
 
     return (
@@ -16,10 +41,23 @@ const AboutMe = () => {
             alignItems: 'flex-start',
             gap: 1
         }}>
-            {content.introParagraphs}
-            {isMentorsExpanded ? content.mentorsExpandedLead : content.mentorsSummary}
+            {aboutMeContent.introParagraphs.map((paragraph, index) => (
+                <Fragment key={index}>{renderParagraph(paragraph)}</Fragment>
+            ))}
+            {isMentorsExpanded
+                ? renderParagraph(aboutMeContent.mentorsExpandedLead)
+                : renderParagraph(aboutMeContent.mentorsSummary)}
             <Collapse in={isMentorsExpanded} timeout={240} unmountOnExit>
-                {content.mentorsDetails}
+                <Box component="ul" sx={{ mt: 0, mb: '1rem', pl: 3 }}>
+                    {aboutMeContent.mentors.map((mentor) => (
+                        <Box component="li" key={mentor.name} sx={{ mb: 0.5 }}>
+                            <Typography variant="body1">
+                                <CustomLink text={mentor.name} href={mentor.href} />
+                                {renderInlineSegments(mentor.description)}
+                            </Typography>
+                        </Box>
+                    ))}
+                </Box>
             </Collapse>
             <Box mt={1} width={'100%'} display={'flex'} justifyContent={'center'}>
                 <Button
@@ -46,9 +84,11 @@ const AboutMe = () => {
             </Box>
             <Box mt={2} width={'100%'}>
                 <Banner
-                    variant={content.banner.variant}
+                    variant={aboutMeContent.banner.variant}
                 >
-                    {content.banner.content}
+                    <Typography variant="body1">
+                        {renderInlineSegments(aboutMeContent.banner.segments)}
+                    </Typography>
                 </Banner>
             </Box>
             {/*<Box width={'100%'}>*/}

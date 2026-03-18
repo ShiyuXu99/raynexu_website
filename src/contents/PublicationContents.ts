@@ -1,29 +1,7 @@
 import {mentalHealthDashboardImg, pairProgrammingImg, smartHomeImg} from "../assets/images/publicationImages";
 import {pair_programming} from "../assets/PDF";
 import {smart_home_privacy} from "../assets/PDF";
-
-interface URLs {
-    pdfUrl?: string;
-    paperUrl?: string;
-    presentationUrl?: string;
-    paperWebsiteUrl?: string;
-}
-
-interface Author {
-    name: string;
-    isBold?: boolean;
-    isCoAuth?: boolean;
-}
-
-interface Publication {
-    id: string;
-    imageUrl: string;
-    title: string;
-    authors: Author[];
-    conference: string;
-    introduction?: string;
-    URLs?: URLs; // presentationUrl is optional here
-}
+import { Publication } from "../types/publication";
 
 export const publicationContents : Publication[] = [
     {
@@ -47,7 +25,7 @@ export const publicationContents : Publication[] = [
             { name: 'Xuhai “Orson” Xu'},
         ],
         conference: 'CHI2026',
-        URLs: {
+        urls: {
             paperUrl: 'https://arxiv.org/abs/2601.14641',
             paperWebsiteUrl: 'https://sea-lab.space/MIND/',
         }
@@ -63,7 +41,7 @@ export const publicationContents : Publication[] = [
         ],
         conference: 'CHI2023',
         // introduction: "This paper investigates how grouping students with similar or different coding solutions impacts the quality of discussions in peer learning within programming courses, aiming to identify the most effective grouping strategies to enhance student learning outcomes.",
-        URLs: {
+        urls: {
             pdfUrl: pair_programming,
             paperUrl: 'https://dl.acm.org/doi/full/10.1145/3544549.3585837',
         }
@@ -81,7 +59,7 @@ export const publicationContents : Publication[] = [
         ],
         conference: 'CHI2022',
         // introduction: "This research explored how to effectively deliver privacy-related notifications in smart homes to both users and bystanders. By surveying 136 users and 123 bystanders, the study examined their preferences for receiving privacy notifications and evaluated four mechanisms to increase privacy awareness,such as Data Dashboards and Ambient Light.",
-        URLs: {
+        urls: {
             pdfUrl: smart_home_privacy,
             paperUrl: 'https://dl.acm.org/doi/10.1145/3491102.3502137',
             presentationUrl: 'https://www.youtube.com/watch?v=4Pao_Dg9C2Y'
