@@ -3,6 +3,7 @@ export interface PublicationUrls {
     paperUrl?: string;
     presentationUrl?: string;
     paperWebsiteUrl?: string;
+    githubUrl?: string;
 }
 
 export interface PublicationAuthor {
@@ -17,6 +18,7 @@ export interface Publication {
     title: string;
     authors: PublicationAuthor[];
     conference: string;
+    award?: string;
     introduction?: string;
     urls?: PublicationUrls;
 }

@@ -4,12 +4,14 @@ import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
 import LinkIcon from '@mui/icons-material/Link';
 import SlideshowIcon from '@mui/icons-material/Slideshow';
 import LanguageIcon from '@mui/icons-material/Language';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 interface ResourceLinksProps {
     pdfUrl?: string;
     paperUrl?: string;
     paperWebsiteUrl?: string;
     presentationUrl?: string;
+    githubUrl?: string;
 }
 
 const ResourceLinks = ({
@@ -17,6 +19,7 @@ const ResourceLinks = ({
                            paperUrl,
                            paperWebsiteUrl,
                            presentationUrl,
+                           githubUrl,
                        }: ResourceLinksProps) => {
     const theme = useTheme();
 
@@ -46,10 +49,16 @@ const ResourceLinks = ({
             url: presentationUrl,
             color: theme.palette.text.primary
         },
+        {
+            name: 'GitHub',
+            icon: <GitHubIcon />,
+            url: githubUrl,
+            color: theme.palette.text.primary
+        },
     ].filter(link => !!link.url); // Only show links with valid URLs
 
     return (
-        <Box sx={{ display: 'flex', gap: 1.5 }}>
+        <Box sx={{ display: 'flex', gap: 0.25, flexWrap: 'wrap' }}>
             {links.map(link => (
                 <Button
                     key={link.name}
@@ -62,13 +71,19 @@ const ResourceLinks = ({
                         color: link.color,
                         textTransform: 'none',
                         backgroundColor: 'transparent',
-                        borderRadius: 1,
+                        borderRadius: 1.5,
                         px: 1,
+                        py: 0.375,
                         minWidth: 0,
-                        '& .MuiButton-startIcon': { marginRight: '7px' },
+                        '& .MuiButton-startIcon': {
+                            marginRight: '7px',
+                            '& > *:first-of-type': {
+                                fontSize: '1rem',
+                            },
+                        },
                         '&:hover': {
                             color: '#0047BB',
-                            backgroundColor: theme.palette.action.hover,
+                            backgroundColor: 'transparent',
                         },
                     }}
                 >

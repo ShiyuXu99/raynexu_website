@@ -24,6 +24,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
                     height: '0.5px',
                     // borderColor: 'divider',
                     width: '100%',
+                    ...dividerSx,
                 }}
             />
         </Box>

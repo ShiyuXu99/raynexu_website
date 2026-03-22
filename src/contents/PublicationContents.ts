@@ -25,9 +25,11 @@ export const publicationContents : Publication[] = [
             { name: 'Xuhai “Orson” Xu'},
         ],
         conference: 'CHI2026',
+        award: 'Best Paper Honorable Mention (top 5%)',
         urls: {
             paperUrl: 'https://arxiv.org/abs/2601.14641',
             paperWebsiteUrl: 'https://sea-lab.space/MIND/',
+            githubUrl: 'https://github.com/sea-lab-space/MIND',
         }
     },
     {
@@ -39,7 +41,7 @@ export const publicationContents : Publication[] = [
             { name: 'Ashley Ge Zhang' },
             { name: 'Steve Oney'  },
         ],
-        conference: 'CHI2023',
+        conference: 'CHI 2023 LBW',
         // introduction: "This paper investigates how grouping students with similar or different coding solutions impacts the quality of discussions in peer learning within programming courses, aiming to identify the most effective grouping strategies to enhance student learning outcomes.",
         urls: {
             pdfUrl: pair_programming,

@@ -4,9 +4,9 @@ import { createTheme, ThemeOptions } from '@mui/material/styles';
 const themeOptions: ThemeOptions = {
     palette: {
         primary: {
-            main: '#2171b5',   // muted academic blue
-            dark: '#2C4E73',
-            light: '#6B8FB3',
+            main: '#4A6178',
+            dark: '#34485C',
+            light: '#6E8296',
         },
         secondary: {
             main: '#8A4F7D',   // muted plum (替代红色)
@@ -24,6 +24,7 @@ const themeOptions: ThemeOptions = {
     },
     typography: {
         fontFamily: [
+            // 'Plus Jakarta Sans',
             '"IBM Plex Sans"',
             '-apple-system',
             'BlinkMacSystemFont',
@@ -55,6 +56,7 @@ const themeOptions: ThemeOptions = {
         body1: {
             fontSize: '15.2px',
             color: '#2b2d30',
+            // fontWeight: 600,
             lineHeight: 1.65,
         },
         body2: {
