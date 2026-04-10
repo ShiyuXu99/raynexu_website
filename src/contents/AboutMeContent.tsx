@@ -5,28 +5,33 @@ export const aboutMeContent: AboutContent = {
         {
             segments: [
                 { kind: 'strong', text: 'Research Interests: ' },
-                { kind: 'text', text: 'Human-computer Interaction | Human-centered AI | Health (mental health focused) | Education' },
+                { kind: 'text', text: 'Human-computer Interaction | Human-centered AI | Health - Mental Health focused' },
             ],
         },
         {
             segments: [
-                { kind: 'text', text: 'Hi! my name is Shiyu (Rayne) Xu, my research focuses on ' },
+                { kind: 'text', text: 'Hi! my name is Shiyu (Rayne) Xu, ' +
+                        'I am an incoming PhD student at University of Michigan- Ann Arbor, ' +
+                        'where I will be advised by ' },
+                {
+                    kind: 'link',
+                    text: 'Prof. Dan Adler',
+                    href: 'https://dadler.co',
+                    fontWeight: 600,
+                },
+                { kind: 'text', text: '. ' },
+                { kind: 'text', text: 'Previously, I earned my master’s degree in Information (HCI) from the University of Michigan, my bachelor’s degree in Computer Science from the University of Wisconsin–Madison, and worked for three years as a full stack engineer.' },
+
+            ],
+        },
+        {
+            segments: [
+                { kind: 'text', text: 'My research focuses on ' },
                 { kind: 'strong', text: 'designing and developing intelligent, human-centered systems' },
                 { kind: 'text', text: ' that enhance human wellbeing and support better sense-making in both daily and clinical contexts.' },
             ],
         },
-        {
-            segments: [
-                { kind: 'text', text: 'I hold a Master’s degree in Human-Computer Interaction from the ' },
-                {
-                    kind: 'link',
-                    text: 'University of Michigan',
-                    href: 'https://www.si.umich.edu',
-                    fontWeight: 600,
-                },
-                { kind: 'text', text: ' and a Bachelor’s degree in Computer Science from the University of Wisconsin–Madison, with minors in Mathematics and Graphic Design, and have three years of experience as a full-stack engineer.' },
-            ],
-        },
+
     ],
     mentorsSummary: {
         segments: [
@@ -71,16 +76,17 @@ export const aboutMeContent: AboutContent = {
     ],
     banner: {
         segments: [
-            { kind: 'text', text: '🔎 I’m actively seeking Ph.D. opportunities in Human-Computer Interaction (HCI) for ' },
-            { kind: 'strong', text: 'Fall 2026' },
-            { kind: 'text', text: '!' },
+            { kind: 'strong', text: '🧳 I plan to attend CHI 2026 with my paper listed ' },
+            { kind: 'link', text: 'here', href: 'https://programs.sigchi.org/chi/2026/search/content?searchKey=Shiyu%20xu' },
+            { kind: 'strong', text: '! See you in Barcelona!' },
         ],
-        variant: 'info',
+        variant: 'neutral',
     },
     banner2: {
         segments: [
-            { kind: 'text', text: '📄 I am currently collaborating with Dr. Xuhai Xu on HCI and mental health research for the summer of 2025.' },
-        ],
+            { kind: 'text', text: '🧳 I plan to attend CHI 2026! See you in Barcelona! Check out my papers in the CHI 2026 program! ' },
+            { kind: 'strong', text: 'Fall 2026' },
+            { kind: 'text', text: '!' },        ],
         variant: 'neutral',
     },
 };

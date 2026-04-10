@@ -21,7 +21,15 @@ const renderInlineSegments = (segments: AboutInlineSegment[]) =>
         }
 
         if (segment.kind === 'strong') {
-            return <strong key={`${segment.text}-${index}`}>{segment.text}</strong>;
+            return (
+                <Box
+                    component="span"
+                    key={`${segment.text}-${index}`}
+                    sx={{ fontWeight: 550 }}
+                >
+                    {segment.text}
+                </Box>
+            );
         }
 
         return <Fragment key={`${segment.text}-${index}`}>{segment.text}</Fragment>;

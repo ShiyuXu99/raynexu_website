@@ -41,7 +41,7 @@ const SocialLinks = () => {
         {
             name: 'Email',
             icon: <EmailIcon />,
-            url: 'mailto:shiyu.rayne.xu@gmail.com',
+            url: 'mailto:shiyuxu@umich.edu',
             color: '#D44638',
         },
     ];
