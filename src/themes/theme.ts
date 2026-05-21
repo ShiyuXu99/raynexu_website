@@ -22,8 +22,8 @@ const themeOptions: ThemeOptions = {
             secondary: '#5A6270',
         },
     },
-        typography: {
-            fontFamily: [
+    typography: {
+        fontFamily: [
             // 'Source Sans 3',
             // 'Plus Jakarta Sans',
             // 'JetBrains Mono',
