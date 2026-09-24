@@ -18,16 +18,9 @@ export interface MentorEntry {
     description: AboutInlineSegment[];
 }
 
-export interface AboutBannerContent {
-    variant: 'neutral' | 'success' | 'info';
-    segments: AboutInlineSegment[];
-}
-
 export interface AboutContent {
     introParagraphs: AboutParagraph[];
     mentorsSummary: AboutParagraph;
     mentorsExpandedLead: AboutParagraph;
     mentors: MentorEntry[];
-    banner: AboutBannerContent;
-    banner2: AboutBannerContent;
 }

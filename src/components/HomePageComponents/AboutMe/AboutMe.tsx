@@ -2,7 +2,6 @@ import { Box, Button, Collapse, Typography } from '@mui/material';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import { Fragment, useState } from 'react';
-import Banner from '../../CustomComponents/Banner/Banner';
 import CustomLink from '../../CustomComponents/CustomLink';
 import { aboutMeContent } from "../../../contents/AboutMeContent";
 import { AboutInlineSegment, AboutParagraph } from '../../../types/about';
@@ -90,22 +89,6 @@ const AboutMe = () => {
                     {isMentorsExpanded ? 'show less about me' : 'show more about me'}
                 </Button>
             </Box>
-            <Box mt={2} width={'100%'}>
-                <Banner
-                    variant={aboutMeContent.banner.variant}
-                >
-                    <Typography variant="body1">
-                        {renderInlineSegments(aboutMeContent.banner.segments)}
-                    </Typography>
-                </Banner>
-            </Box>
-            {/*<Box width={'100%'}>*/}
-            {/*    <Banner*/}
-            {/*        variant={content.banner2.variant}*/}
-            {/*    >*/}
-            {/*        {content.banner2.content}*/}
-            {/*    </Banner>*/}
-            {/*</Box>*/}
         </Box>
     );
 };

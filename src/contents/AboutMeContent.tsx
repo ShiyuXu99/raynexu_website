@@ -11,8 +11,7 @@ export const aboutMeContent: AboutContent = {
         {
             segments: [
                 { kind: 'text', text: 'Hi! my name is Shiyu (Rayne) Xu, ' +
-                        'I am an incoming PhD student at University of Michigan- Ann Arbor, ' +
-                        'where I will be advised by ' },
+                        'I am a first-year PhD student in Computer Science and Engineering at the University of Michigan, advised by ' },
                 {
                     kind: 'link',
                     text: 'Prof. Dan Adler',
@@ -74,19 +73,4 @@ export const aboutMeContent: AboutContent = {
             ],
         },
     ],
-    banner: {
-        segments: [
-            { kind: 'strong', text: '🧳 I plan to attend CHI 2026 with my paper listed ' },
-            { kind: 'link', text: 'here', href: 'https://programs.sigchi.org/chi/2026/search/content?searchKey=Shiyu%20xu' },
-            { kind: 'strong', text: '! See you in Barcelona!' },
-        ],
-        variant: 'neutral',
-    },
-    banner2: {
-        segments: [
-            { kind: 'text', text: '🧳 I plan to attend CHI 2026! See you in Barcelona! Check out my papers in the CHI 2026 program! ' },
-            { kind: 'strong', text: 'Fall 2026' },
-            { kind: 'text', text: '!' },        ],
-        variant: 'neutral',
-    },
 };
