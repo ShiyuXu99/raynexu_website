@@ -1,4 +1,10 @@
-import {mentalHealthDashboardImg, pairProgrammingImg, smartHomeImg} from "../assets/images/publicationImages";
+import {
+    graphingInlineImg,
+    mentalHealthDashboardImg,
+    pairProgrammingImg,
+    pawsImg,
+    smartHomeImg,
+} from "../assets/images/publicationImages";
 import {pair_programming} from "../assets/PDF";
 import {smart_home_privacy} from "../assets/PDF";
 import { Publication } from "../types/publication";
@@ -31,6 +37,48 @@ export const publicationContents : Publication[] = [
             paperWebsiteUrl: 'https://sea-lab.space/MIND/',
             githubUrl: 'https://github.com/sea-lab-space/MIND',
         }
+    },
+    {
+        id: 'graphing-inline',
+        imageUrl: graphingInlineImg,
+        title: 'Graphing Inline: Understanding Word-scale Graphics Use in Scientific Papers',
+        authors: [
+            { name: 'Siyu Lu*', isCoAuth: true },
+            { name: 'Yanhan Liu*', isCoAuth: true },
+            { name: 'Shiyu Xu', isBold: true },
+            { name: 'Ruishi Zou†' },
+            { name: 'Chen Ye' },
+        ],
+        conference: "CHI '26 Posters",
+        urls: {
+            paperUrl: 'https://dl.acm.org/doi/10.1145/3772363.3798356',
+            paperWebsiteUrl: 'https://salmooonaa.github.io/graphing-inline/',
+        },
+    },
+    {
+        id: 'paws',
+        imageUrl: pawsImg,
+        title: 'PAWS: Empowering Everyday Cannabis Use Disorder Support through a Personalized AI Digital Pet on Smartwatches',
+        authors: [
+            { name: 'Zhihan Jiang' },
+            { name: 'Mengyuan “Millie” Wu' },
+            { name: 'Ruishi Zou' },
+            { name: 'Shiyu Xu', isBold: true },
+            { name: 'Emma Macmanus' },
+            { name: 'Steven Liao' },
+            { name: 'Ping Zhang' },
+            { name: 'Dakuo Wang' },
+            { name: 'James L. David' },
+            { name: 'Nabila El-Bassel' },
+            { name: 'Lena Mamykina' },
+            { name: 'Frances R. Levin' },
+            { name: 'Ryan Sultan' },
+            { name: 'Xuhai “Orson” Xu' },
+        ],
+        conference: "CHI '26 Workshop",
+        urls: {
+            pdfUrl: 'https://everydaywearableforhealth.github.io/assets/pdf/CHI26W_Submission_Digital_Pet_for_CUD.pdf',
+        },
     },
     {
         id: '1',

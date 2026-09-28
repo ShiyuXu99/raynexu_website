@@ -14,7 +14,7 @@ export interface PublicationAuthor {
 
 export interface Publication {
     id: string;
-    imageUrl: string;
+    imageUrl?: string;
     title: string;
     authors: PublicationAuthor[];
     conference: string;

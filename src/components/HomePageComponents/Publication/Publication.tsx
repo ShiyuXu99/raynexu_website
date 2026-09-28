@@ -32,41 +32,43 @@ const PublicationComponent = () => {
                             },
                         }}
                     >
-                        <Box
-                            sx={{
-                                flex: { md: '0 0 180px' },
-                                display: 'flex',
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                alignSelf: { xs: 'stretch', md: 'center' },
-                            }}
-                        >
+                        {pub.imageUrl && (
                             <Box
-                                className="publication-thumbnail"
                                 sx={{
-                                    width: { xs: '100%', md: 180 },
-                                    maxWidth: { xs: 320, md: 'none' },
-                                    aspectRatio: '1.35 / 1',
-                                    overflow: 'hidden',
-                                    borderRadius: 2,
-                                    backgroundColor: 'transparent',
-                                    transition: 'background-color 180ms ease, box-shadow 180ms ease',
+                                    flex: { md: '0 0 180px' },
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    alignSelf: { xs: 'stretch', md: 'center' },
                                 }}
                             >
                                 <Box
-                                    component="img"
-                                    src={pub.imageUrl}
-                                    alt={pub.title}
+                                    className="publication-thumbnail"
                                     sx={{
-                                        width: '100%',
-                                        height: '100%',
-                                        objectFit: 'contain',
-                                        objectPosition: 'center center',
-                                        display: 'block',
+                                        width: { xs: '100%', md: 180 },
+                                        maxWidth: { xs: 320, md: 'none' },
+                                        aspectRatio: '1.35 / 1',
+                                        overflow: 'hidden',
+                                        borderRadius: 2,
+                                        backgroundColor: 'transparent',
+                                        transition: 'background-color 180ms ease, box-shadow 180ms ease',
                                     }}
-                                />
+                                >
+                                    <Box
+                                        component="img"
+                                        src={pub.imageUrl}
+                                        alt={pub.title}
+                                        sx={{
+                                            width: '100%',
+                                            height: '100%',
+                                            objectFit: 'contain',
+                                            objectPosition: 'center center',
+                                            display: 'block',
+                                        }}
+                                    />
+                                </Box>
                             </Box>
-                        </Box>
+                        )}
 
                         <Box sx={{
                             flex: 1,
